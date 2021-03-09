@@ -7,9 +7,8 @@
 import math
 # TODO: Définissez vos fonction ici
 def ellipse(a,b,c,ri):
-    volume_ell = math.pi()*a*b*c
+    volume_ell = math.pi()*a*b*c*(4/3)
     masse_ell = ri*volume_ell
-    print(volume_ell + "" + masse_ell)
     return volume_ell, masse_ell
 
 def frequence(sentence: str) -> dict:
@@ -29,9 +28,6 @@ def frequence(sentence: str) -> dict:
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-    a = float(input())
-    b = float(input())
-    c = float(input())
-    ri = float(input())
-    ellipse(a,b,c,ri)
+    mass_vol = ellipse()
+    print(mass_vol)
     pass
