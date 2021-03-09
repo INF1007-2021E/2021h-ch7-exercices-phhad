@@ -6,7 +6,8 @@
 
 import math
 import sys
-sys.path(0, "")
+sys.path(0, "/Documents/GitHub/2021h-ch-6-1-exercices-phhad")
+from _exercice_version_prof import frequence
 # TODO: Définissez vos fonction ici
 def ellipse(a,b,c,ri):
     volume_ell = math.pi()*a*b*c*(4/3)
