@@ -18,5 +18,5 @@ if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
     mass_vol = ellipse()
     print(mass_vol)
-    lambda sentence: (frequence(sentence), sorted(frequency, key=frequency.__getitem__
+    print(lambda sentence: sorted(frequence(sentence), key=frequence(sentence).__getitem__)[-1])("test test test test")
     pass
