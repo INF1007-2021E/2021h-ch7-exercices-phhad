@@ -6,9 +6,10 @@
 
 import math
 # TODO: Définissez vos fonction ici
-def vol_ellipse(a,b,c):
+def ellipse(a,b,c,ri):
     volume_ell = math.pi()*a*b*c
-    return volume_ell
+    masse_ell = ri*volume_ell
+    return volume_ell, masse_ell
 
 def frequence(sentence: str) -> dict:
     # TODO: Afficher les lettres les plus fréquentes
@@ -27,5 +28,5 @@ def frequence(sentence: str) -> dict:
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-    vol_ellipse(3,3,3)
+    ellipse(3,3,3,1)
     pass
