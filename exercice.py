@@ -11,8 +11,8 @@ from _exercice_version_prof import frequence
 from turtle import *
 # TODO: Définissez vos fonction ici
 
-def ellipse(a,b,c,ri):
-    volume_ell = math.pi()*a*b*c*(4/3)
+def ellipse(a=3,b=2,c=3,ri=2):
+    volume_ell = math.pi*a*b*c*(4/3)
     masse_ell = ri*volume_ell
     return volume_ell, masse_ell
 
@@ -38,5 +38,6 @@ if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
     mass_vol = ellipse()
     print(mass_vol)
-    print(lambda sentence: sorted(frequence(sentence), key=frequence(sentence).__getitem__)[-1])("test test test test")
+    print((lambda sentence: sorted(frequence(sentence), key=frequence(sentence).__getitem__)[-1])("big big test bb"))
+
     pass
